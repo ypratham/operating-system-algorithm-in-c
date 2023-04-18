@@ -28,9 +28,10 @@ int main()
     for (i = 0; i < n; i++)
     {
         processes[i].pid = i + 1;
-        printf("Enter the arrival time for process %d: ", processes[i].pid);
+        printf("\nEnter the details for process: %d ", processes[i].pid);
+        printf("Enter the arrival time ");
         scanf("%d", &processes[i].arrival_time);
-        printf("Enter the burst time for process %d: ", processes[i].pid);
+        printf("Enter the burst time: ");
         scanf("%d", &processes[i].burst_time);
         processes[i].remaining_time = processes[i].burst_time;
     }
@@ -80,6 +81,6 @@ int main()
         printf("%d\t%d\t\t%d\t\t%d\t\t%d\t\t%d\n", processes[i].pid, processes[i].arrival_time, processes[i].burst_time, processes[i].completion_time, processes[i].waiting_time, processes[i].turnaround_time);
     }
 
-    printf("Average waiting time is: %d", average_waiting_time);
-    printf("Average turn around time is: %d", average_turnaround_time);
+    printf("Average waiting time is: %f", average_waiting_time);
+    printf("Average turn around time is: %f", average_turnaround_time);
 }

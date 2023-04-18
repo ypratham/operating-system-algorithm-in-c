@@ -107,11 +107,11 @@ int main()
     {
         if (i == n - 1)
         {
-            printf(" %d", isSafe_seq[i]);
+            printf(" %d", isSafe_seq[i] + 1);
         }
         else
         {
-            printf("%d -> ", isSafe_seq[i]);
+            printf("%d -> ", isSafe_seq[i] + 1);
         }
     }
     printf("\n");
